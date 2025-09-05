@@ -1,0 +1,29 @@
+gitignore_content = """# Node.js dependencies
+node_modules/
+
+Logs
+
+logs
+.log
+npm-debug.log
+
+OS-specific files
+
+.DS_Store
+Thumbs.db
+
+Environment files
+
+.env
+
+Build artifacts
+
+dist/
+"""
+
+Write files
+
+(Path(root / "README.md")).write_text(readme_content, encoding="utf-8")
+(Path(root / ".gitignore")).write_text(gitignore_content, encoding="utf-8")
+
+"/mnt/data/README.md and /mnt/data/.gitignore created"
